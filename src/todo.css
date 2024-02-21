@@ -1,0 +1,179 @@
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: fit-content;
+    /* Ajusta la altura según el contenido */
+    max-width: max-content;
+    /* Establece el ancho máximo */
+}
+
+.form-container {
+    max-width: 200px;
+    margin: 0 auto;
+    height: fit-content; 
+    margin-bottom: 20px;
+}
+
+.form-container form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.input {
+    border-radius: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    font-family: system-ui;
+    font-size: 12px;
+    text-align: center;
+    display: flex;
+    width: 250px;
+}
+
+.button {
+    border-radius: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    font-size: 12px;
+    display: flex;
+    font-family: system-ui;
+    justify-content: center;
+    cursor: pointer;
+    gap: 5px;
+    width: 100px;
+}
+
+.todo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    -webkit-box-shadow: -4px 2px 16px 3px rgba(255,255,255,1);
+    -moz-box-shadow: -4px 2px 16px 3px rgba(255,255,255,1);
+    box-shadow: -4px 2px 16px 3px rgba(255,255,255,1);
+    width: 35%;
+    margin: 0 auto;
+    max-height: 500px;
+    overflow-y: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+
+.todo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 25px;
+    gap: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    width: 380px;
+    text-align: center;
+    background-color: #ffffff;
+    /* Stronger white color */
+    -webkit-box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.1);
+    /* Box shadow */
+    -moz-box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.1);
+    /* Box shadow */
+    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.1);
+    /* Box shadow */
+}
+
+.todo p {
+    display: flex;
+    font-family: system-ui;
+    font-size: 14px;
+    margin: 0;
+    text-overflow: '';
+}
+
+.buttons {
+    display: flex;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+.buttons button:hover,
+.buttonClose:hover,
+.buttonUpdated:hover {
+    transform: scale(1.1);
+}
+
+.buttons button {
+    padding: 8px 16px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    /* Agregar transición */
+}
+
+.inputUpdated {
+    padding: 8px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.buttonUpdated {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: #00c6ff;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+.buttonClose {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: #ff4b47;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+.formUpdated {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 1100px) {
+    .form {
+        flex-direction: column;
+        margin: 20px;
+    }
+
+    .input,
+    .button {
+        width: 100%;
+    }
+
+    .todo-container {
+        width: 80%;
+    }
+
+    .todo {
+        width: 100%;
+    }
+}
